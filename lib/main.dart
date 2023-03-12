@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hand_in_hand/screens/loading_screen.dart';
 import 'screens/home_screen.dart';
 
 void main() {
