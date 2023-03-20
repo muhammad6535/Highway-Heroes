@@ -8,6 +8,6 @@ const dbSchema = new Schema({
   // name: { type: String, required: true, unique: false, index: false },
 });
 
-const User = mongoose.model("db", dbSchema);
+const User = mongoose.model("users", dbSchema);
 
 export default User;
