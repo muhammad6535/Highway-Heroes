@@ -1,18 +1,22 @@
 import Users from "../models/usersSchema";
 
-export const getUser = async (request, response) => {
+export const getUser = (request, response) => {
+  // const userName = request.body.userName;
+  // const password = request.body.password;
+  var t = Users.find({}, (err, res) => {
+    // response.sendStatus(200);
+    console.log('ressss',res.length)
+    console.log('ressss',res)
+    if (res.length > 0) {
+      response.sendStatus(200);
+    } else {
+      response.sendStatus(204);
+    }
+  });
+// console.log("t ",t)
+
   
-
- Users.find({},(err,res)=>{
-  if (err) {
-    console.error(err);
-  } else {
-    console.log(res);
-  }
- })
 };
-
-
 
 // const User = require('../models/user');
 
