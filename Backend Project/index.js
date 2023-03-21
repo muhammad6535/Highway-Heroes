@@ -3,7 +3,7 @@ import app from "./dbConnect.js";
 import usersRouter from "./routes/user";
 
 // import Student from "./models/studentSchema.js";
-import User from "./models/usersSchema.js";
+// import User from "./models/usersSchema.js";
 
 console.log("hello")
 // app.use("/students", studentsRouter);

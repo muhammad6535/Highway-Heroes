@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-
+import User from "./models/usersSchema";
 const app = express();
 app.use(cors());
 
@@ -12,14 +12,23 @@ const connectionString =
   "mongodb://localhost:27017/HighwayHeroesDB";
 
 mongoose
-  .connect(connectionString)
+  .connect(connectionString,{ useNewUrlParser: true })
   .then((result) => {
     app.listen(PORT, () =>
       console.log(`Ther server is running on port ${PORT}`)
     );
+   
   })
   .catch((err) => {
     console.log(err);
+  });
+
+  User.find({}, (err, data) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(data);
+    }
   });
 
 export default app;
