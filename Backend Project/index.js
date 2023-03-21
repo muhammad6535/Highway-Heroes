@@ -1,23 +1,14 @@
+// Import the dbConnect.js file to establish a connection with the database
 import app from "./dbConnect.js";
-// import studentsRouter from "./routes/students.js";
+
+// Import the usersRouter file to handle user-related routes
 import usersRouter from "./routes/user";
 
-// import Student from "./models/studentSchema.js";
+// Import the usersSchema file to define the structure of the user data
 import User from "./models/usersSchema.js";
 
+// Log a message to the console to indicate the start of the program
 console.log("hello")
-// app.use("/students", studentsRouter);
+
+// Use the usersRouter to handle requests for the '/users' route
 app.use("/users", usersRouter);
-
-// const user = new User({
-//   userName: "mohmed6535",
-//   password: "myPass",
-// });
-
-// user.save(function (err, result) {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log(result);
-//   }
-// });
