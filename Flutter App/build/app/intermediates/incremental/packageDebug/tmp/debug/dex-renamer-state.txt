@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Tue Mar 21 17:41:29 IST 2023
 base.0=D\:\\Projects\\Hand in hand\\Highway Heroes\\Highway-Heroes\\Flutter App\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+=======
+#Tue Mar 21 11:50:28 IST 2023
+base.0=C\:\\Users\\Karem Ghara\\Documents\\GitHub\\Highway-Heroes\\Flutter App\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+>>>>>>> master
 renamed.0=classes.dex
 path.0=classes.dex

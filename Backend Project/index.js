@@ -5,7 +5,6 @@ import app from "./dbConnect.js";
 import usersRouter from "./routes/user";
 
 // Import the usersSchema file to define the structure of the user data
-import User from "./models/usersSchema.js";
 
 // Log a message to the console to indicate the start of the program
 console.log("hello")

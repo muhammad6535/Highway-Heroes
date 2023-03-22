@@ -4,7 +4,11 @@
             "outputFile": "com.example.hand_in_hand.app-mergeDebugResources-9:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "D:\\Projects\\Hand in hand\\Highway Heroes\\Highway-Heroes\\Flutter App\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+=======
+                    "source": "C:\\Users\\Karem Ghara\\Documents\\GitHub\\Highway-Heroes\\Flutter App\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+>>>>>>> master
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

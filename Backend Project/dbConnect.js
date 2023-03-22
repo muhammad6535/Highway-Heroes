@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-
+import User from "./models/usersSchema";
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -16,6 +16,14 @@ mongoose
   })
   .catch((err) => {
     console.error(err);
+  });
+
+  User.find({}, (err, data) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(data);
+    }
   });
 
 export default app;
